@@ -24,6 +24,11 @@ finish-args:
   - --env=WINEDLLOVERRIDES="mscoree,mshtml="
 
 modules:
+  - name: setup
+    buildsystem: simple
+    build-commands:
+      - mkdir -p /app/lib/extension/vcrun2015
+
   - name: cemu
     only-arches:
       - x86_64
