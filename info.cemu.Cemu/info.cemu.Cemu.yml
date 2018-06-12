@@ -7,6 +7,13 @@ sdk: org.winepak.Sdk
 
 command: cemu
 
+add-extensions:
+  org.winepak.Platform.Extension.vcrun2015:
+    directory: lib/extension/vcrun2015
+    version: 3.0
+    add-ld-path: lib
+    no-autodownload: false
+
 tags:
   - proprietary
 
